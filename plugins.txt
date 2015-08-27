@@ -15,3 +15,10 @@ view-job-filters:1.26
 timestamper:1.6
 throttle-concurrents:1.8.4
 slack:1.7
+m2release:0.14.0
+matrix-project:1.4
+port-allocator:1.8
+sonar:2.1
+description-setter:1.9
+cucumber-reports:0.0.23
+cucumber-testresult-plugin:0.8.2
