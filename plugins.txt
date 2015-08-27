@@ -21,4 +21,7 @@ port-allocator:1.8
 sonar:2.1
 description-setter:1.9
 cucumber-reports:0.0.23
+pam-auth:1.2
+ssh-credentials:1.11
+ssh-agent:1.6
 cucumber-testresult-plugin:0.8.2
