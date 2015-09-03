@@ -24,3 +24,4 @@ pam-auth:1.2
 ssh-credentials:1.11
 ssh-agent:1.6
 cucumber-testresult-plugin:0.8.2
+build-timeout:1.15
