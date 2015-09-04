@@ -28,3 +28,4 @@ build-timeout:1.15
 simple-theme-plugin:0.3
 docker-plugin:0.13.0
 matrix-project:1.4
+envinject-plugin:1.92.1
