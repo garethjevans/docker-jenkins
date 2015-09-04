@@ -25,3 +25,5 @@ ssh-credentials:1.11
 ssh-agent:1.6
 cucumber-testresult-plugin:0.8.2
 build-timeout:1.15
+simple-theme-plugin:0.3
+docker-plugin:0.13.0
