@@ -12,7 +12,7 @@ ssh-credentials:1.11
 credentials:1.22
 ws-cleanup:0.28
 view-job-filters:1.26
-timestamper:1.7.2.2
+timestamper:1.7.2
 throttle-concurrents:1.8.4
 slack:1.8
 m2release:0.14.0
