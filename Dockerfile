@@ -4,7 +4,7 @@ FROM jenkins
 COPY plugins.txt /usr/local/etc/plugins.txt
 RUN /usr/local/bin/plugins.sh /usr/local/etc/plugins.txt
 
-COPY init/* 'pwd'/jobs:/var/jenkins_home/init.groovy.d/
+COPY init/* /var/jenkins_home/init.groovy.d/
 
 # set shell variables for java installation
 ENV java_version 1.7.0_72
