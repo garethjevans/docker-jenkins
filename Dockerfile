@@ -31,3 +31,5 @@ RUN ln -s /opt/apache-maven-3.2.2 /opt/maven
 RUN ln -s /opt/maven/bin/mvn /usr/local/bin
 RUN rm -f /tmp/apache-maven-3.2.2.tar.gz
 ENV MAVEN_HOME /opt/maven
+
+USER jenkins
