@@ -1,4 +1,4 @@
-gerrit-trigger:2.15.0
+gerrit-trigger:2.15.1
 git-client:1.19.0
 git:2.4.0
 scm-api:0.2
@@ -9,9 +9,9 @@ durable-task:1.6
 token-macro:1.10
 ldap:1.11
 ssh-credentials:1.11
-credentials:1.22
+credentials:1.23
 ws-cleanup:0.28
-view-job-filters:1.26
+view-job-filters:1.27
 timestamper:1.7.2
 throttle-concurrents:1.8.4
 slack:1.8
@@ -21,12 +21,11 @@ sonar:2.2.1
 description-setter:1.10
 cucumber-reports:0.0.23
 pam-auth:1.2
-ssh-credentials:1.11
 ssh-agent:1.8
 cucumber-testresult-plugin:0.8.2
 build-timeout:1.15
 simple-theme-plugin:0.3
-docker-plugin:0.13.0
+docker-plugin:0.14.0
 matrix-project:1.6
 envinject:1.92.1
 workflow-step-api:1.9
