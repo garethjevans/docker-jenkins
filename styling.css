@@ -3,3 +3,29 @@
 body, table, form, input, td, th, p, textarea, select {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 }
+
+#top-panel {
+  background: none; 
+}
+  
+#top-panel td#login-field span a {
+  background: none; 
+}
+
+#top-panel td #searchform a {
+  background: none;
+  height: auto;
+  width: auto; 
+}
+
+#top-panel td > a {
+  background: url("http://xrono.isotope11.com/system/site_logos/1/original/isotope_logo.png?1330143115") 0 0 no-repeat;
+  display: block;
+  width: 130px;
+  height: 40px;
+  margin: 10px 0 10px 10px; 
+}
+
+#top-panel td > a img {
+  display: none; 
+}
