@@ -14,22 +14,20 @@ ENV downloadlink http://download.oracle.com/otn-pub/java/jdk/7u72-b14/$filename
 USER root
 
 # download java, accepting the license agreement
-RUN wget --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" -O /tmp/$filename $downloadlink
-
-# unpack java
+RUN wget --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" -O /tmp/$filename $downloadlink && \
 RUN tar -zxf /tmp/$filename -C /opt/
-
-# configure symbolic links for the java and javac executables
 RUN update-alternatives --install /usr/bin/java java /opt/jdk$java_version/bin/java 2 && update-alternatives --install /usr/bin/javac javac /opt/jdk$java_version/bin/javac 2
 
 # get maven 3.2.2
-RUN wget --no-verbose -O /tmp/apache-maven-3.2.2.tar.gz http://archive.apache.org/dist/maven/maven-3/3.2.2/binaries/apache-maven-3.2.2-bin.tar.gz
 
 # install maven
-RUN tar xzf /tmp/apache-maven-3.2.2.tar.gz -C /opt/
-RUN ln -s /opt/apache-maven-3.2.2 /opt/maven
-RUN ln -s /opt/maven/bin/mvn /usr/local/bin
-RUN rm -f /tmp/apache-maven-3.2.2.tar.gz
+ENV MAVEN_VERSION 3.2.2
+RUN wget --no-verbose -O /tmp/apache-maven-${MAVEN_VERSION}.tar.gz http://archive.apache.org/dist/maven/maven-3/${MAVEN_VERSION}/binaries/apache-maven-${MAVEN_VERSION}-bin.tar.gz && \
+	tar xzf /tmp/apache-maven-${MAVEN_VERSION}.tar.gz -C /opt/ && \
+	ln -s /opt/apache-maven-${MAVEN_VERSION} /opt/maven && \
+	ln -s /opt/maven/bin/mvn /usr/local/bin && \
+	rm -f /tmp/apache-maven-${MAVEN_VERSION}.tar.gz
+
 ENV MAVEN_HOME /opt/maven
 
 USER jenkins
