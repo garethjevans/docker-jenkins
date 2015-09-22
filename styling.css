@@ -18,7 +18,7 @@ body, table, form, input, td, th, p, textarea, select {
   width: auto; 
 }
 
-#top-panel td > a {
+#logo {
   background: url("http://xrono.isotope11.com/system/site_logos/1/original/isotope_logo.png?1330143115") 0 0 no-repeat;
   display: block;
   width: 130px;
@@ -26,6 +26,10 @@ body, table, form, input, td, th, p, textarea, select {
   margin: 10px 0 10px 10px; 
 }
 
-#top-panel td > a img {
+#jenkins-head-icon {
+  display: none; 
+}
+
+#jenkins-name-icon {
   display: none; 
 }
