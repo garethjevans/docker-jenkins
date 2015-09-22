@@ -15,12 +15,9 @@ USER root
 
 # download java, accepting the license agreement
 RUN wget --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" -O /tmp/$filename $downloadlink && \
-RUN tar -zxf /tmp/$filename -C /opt/
-RUN update-alternatives --install /usr/bin/java java /opt/jdk$java_version/bin/java 2 && update-alternatives --install /usr/bin/javac javac /opt/jdk$java_version/bin/javac 2
+	tar -zxf /tmp/$filename -C /opt/ && \
+	update-alternatives --install /usr/bin/java java /opt/jdk$java_version/bin/java 2 && update-alternatives --install /usr/bin/javac javac /opt/jdk$java_version/bin/javac 2
 
-# get maven 3.2.2
-
-# install maven
 ENV MAVEN_VERSION 3.2.2
 RUN wget --no-verbose -O /tmp/apache-maven-${MAVEN_VERSION}.tar.gz http://archive.apache.org/dist/maven/maven-3/${MAVEN_VERSION}/binaries/apache-maven-${MAVEN_VERSION}-bin.tar.gz && \
 	tar xzf /tmp/apache-maven-${MAVEN_VERSION}.tar.gz -C /opt/ && \
