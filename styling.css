@@ -5,13 +5,17 @@ body, table, form, input, td, th, p, textarea, select {
 }
 
 .logo {
-  background: url("http://xrono.isotope11.com/system/site_logos/1/original/isotope_logo.png?1330143115") 0 0 no-repeat;
+  background: url("/userContent/jenkins_logo.png") 0 0 no-repeat;
   display: block;
-  width: 130px;
-  height: 40px;
+  width: 260px;
+  height: 60px;
   margin: 10px 0 10px 10px; 
 }
 
-.logo img {
-  display: none; 
+img#jenkins-head-icon {
+  display: none;
+}
+
+img#jenkins-name-icon {
+  display: none;
 }
