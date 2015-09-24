@@ -30,3 +30,4 @@ matrix-project:1.6
 envinject:1.92.1
 workflow-step-api:1.9
 greenballs:1.14
+ssh-slaves:1.10
