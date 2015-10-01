@@ -54,6 +54,12 @@ RUN chown jenkins:jenkins /usr/local/bin/jenkins.sh && \
 	chmod a+x /usr/local/bin/jenkins.sh && \
 	chmod a+x /usr/local/bin/plugins.sh
 
+ENV SONAR_VERSION 2.4
+RUN wget http://repo1.maven.org/maven2/org/codehaus/sonar/runner/sonar-runner-dist/${SONAR_VERSION}/sonar-runner-dist-${SONAR_VERSION}.zip && \
+	unzip sonar-runner-dist-${SONAR_VERSION}.zip && \
+	mv sonar-runner-${SONAR_VERSION} /opt/sonar-runner && \
+	chown -R jenkins:jenkins /opt/sonar-runner
+
 USER jenkins
 
 # Install plugins
