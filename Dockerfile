@@ -63,7 +63,7 @@ RUN wget http://repo1.maven.org/maven2/org/codehaus/sonar/runner/sonar-runner-di
 USER jenkins
 
 # Install plugins
-COPY plugins.txt /usr/local/etc/plugins.txt
-RUN /usr/local/bin/plugins.sh /usr/local/etc/plugins.txt
+COPY plugins.txt /usr/local/etc/plugins.txt #redo
+RUN /usr/local/bin/plugins.sh /usr/local/etc/plugins.txta #redo
 
 ENTRYPOINT ["/bin/tini", "--", "/usr/local/bin/jenkins.sh"]
