@@ -28,7 +28,7 @@ simple-theme-plugin:0.3
 docker-plugin:0.14.0
 matrix-project:1.6
 envinject:1.92.1
-workflow-step-api:1.9
+workflow-aggregator:1.10
 greenballs:1.14
 ssh-slaves:1.10
 swarm:2.0
