@@ -33,3 +33,4 @@ greenballs:1.14
 ssh-slaves:1.10
 swarm:2.0
 htmlpublisher:1.6
+job-dsl:1.38
