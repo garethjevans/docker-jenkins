@@ -64,6 +64,6 @@ USER jenkins
 
 # Install plugins
 COPY plugins.txt /usr/local/etc/plugins.txt
-RUN /usr/local/bin/plugins.sh /usr/local/etc/plugins.txta #redo
+RUN /usr/local/bin/plugins.sh /usr/local/etc/plugins.txt #redo
 
 ENTRYPOINT ["/bin/tini", "--", "/usr/local/bin/jenkins.sh"]
