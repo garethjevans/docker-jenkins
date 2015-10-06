@@ -1,10 +1,9 @@
-gerrit-trigger:2.15.1
+gerrit-trigger:2.16.0
 git-client:1.19.0
 git:2.4.0
 scm-api:0.2
 junit:1.9
 maven-plugin:2.12
-docker-plugin:0.12.1
 durable-task:1.6
 token-macro:1.10
 ldap:1.11
@@ -25,7 +24,7 @@ ssh-agent:1.8
 cucumber-testresult-plugin:0.8.2
 build-timeout:1.15
 simple-theme-plugin:0.3
-docker-plugin:0.14.0
+docker-plugin:0.15.0
 matrix-project:1.6
 envinject:1.92.1
 workflow-aggregator:1.10
@@ -33,4 +32,4 @@ greenballs:1.14
 ssh-slaves:1.10
 swarm:2.0
 htmlpublisher:1.6
-job-dsl:1.38
+job-dsl:1.39
