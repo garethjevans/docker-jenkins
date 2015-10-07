@@ -6,6 +6,7 @@ cucumber-testresult-plugin:0.8.2
 description-setter:1.10
 docker-plugin:0.15.0
 durable-task:1.6
+embeddable-build-status:1.8
 envinject:1.92.1
 gerrit-trigger:2.16.0
 git:2.4.0
