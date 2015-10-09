@@ -11,6 +11,7 @@ envinject:1.92.1
 gerrit-trigger:2.16.0
 git:2.4.0
 git-client:1.19.0
+git-server:1.5
 greenballs:1.14
 htmlpublisher:1.6
 javadoc:1.3
