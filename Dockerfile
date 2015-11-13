@@ -60,6 +60,21 @@ RUN wget http://repo1.maven.org/maven2/org/codehaus/sonar/runner/sonar-runner-di
 	mv sonar-runner-${SONAR_VERSION} /opt/sonar-runner && \
 	chown -R jenkins:jenkins /opt/sonar-runner
 
+ENV NEWRELIC_AGENT_VERSION 3.22.0
+RUN wget https://download.run.pivotal.io/new-relic/new-relic-${NEWRELIC_AGENT_VERSION}.jar && \
+	mkdir /opt/newrelic && \
+	mv new-relic-${NEWRELIC_AGENT_VERSION}.jar /opt/newrelic/new-relic.jar && \
+	chown -R jenkins:jenkins /opt/newrelic
+
+USER jenkins
+
+# Install plugins
+COPY plugins.txt /usr/local/etc/plugins.txt
+RUN /usr/local/bin/plugins.sh /usr/local/etc/plugins.txt #redo
+
+ENTRYPOINT ["/bin/tini", "--", "/usr/local/bin/jenkins.sh"]
+
+
 USER jenkins
 
 # Install plugins
