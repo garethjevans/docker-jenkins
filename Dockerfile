@@ -66,6 +66,8 @@ RUN wget https://download.run.pivotal.io/new-relic/new-relic-${NEWRELIC_AGENT_VE
 	mv new-relic-${NEWRELIC_AGENT_VERSION}.jar /opt/newrelic/new-relic.jar && \
 	chown -R jenkins:jenkins /opt/newrelic
 
+COPY newrelic.yml /opt/newrelic/
+
 USER jenkins
 
 # Install plugins
