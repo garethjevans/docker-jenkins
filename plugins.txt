@@ -33,7 +33,7 @@ scm-api:1.0
 script-security:1.15
 simple-theme-plugin:0.3
 slack:1.8.1
-sonar:2.3
+sonar:2.2.1
 ssh-agent:1.8
 ssh-credentials:1.11
 ssh-slaves:1.10
