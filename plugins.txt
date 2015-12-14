@@ -7,7 +7,7 @@ credentials:1.24
 couchdb-statistics:0.2.1
 cucumber-reports:0.0.23
 cucumber-testresult-plugin:0.8.2
-dependency-check-jenkins-plugin:1.3.2
+dependency-check-jenkins-plugin:1.3.3
 description-setter:1.10
 docker-plugin:0.16.0
 durable-task:1.7
@@ -23,6 +23,7 @@ htmlpublisher:1.9
 javadoc:1.3
 job-dsl:1.40
 jobConfigHistory:2.12
+jquery:1.11.2-0
 jquery-detached:1.1.1
 junit:1.9
 ldap:1.11
@@ -32,6 +33,7 @@ matrix-project:1.6
 maven-plugin:2.12.1
 nodelabelparameter:1.7
 pam-auth:1.2
+parameterized-trigger:2.29
 port-allocator:1.8
 rebuild:1.25
 scm-api:1.0
