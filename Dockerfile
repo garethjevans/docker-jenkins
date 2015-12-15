@@ -74,9 +74,4 @@ USER jenkins
 COPY plugins.txt /usr/local/etc/plugins.txt
 RUN /usr/local/bin/plugins.sh /usr/local/etc/plugins.txt #redo
 
-RUN touch /var/jenkins_home/plugins/windows-slaves.jpi.disabled && \
-    touch /var/jenkins_home/plugins/subversion.jpi.disabled && \
-    touch /var/jenkins_home/plugins/cvs.jpi.disabled && \
-    touch /var/jenkins_home/plugins/ant.jpi.disabled
-
 ENTRYPOINT ["/bin/tini", "--", "/usr/local/bin/jenkins.sh"]
