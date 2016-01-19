@@ -31,6 +31,7 @@ junit:1.10
 ldap:1.11
 m2release:0.14.0
 mailer:1.16
+mask-passwords:2.8
 matrix-auth:1.2
 matrix-project:1.6
 maven-plugin:2.12.1
