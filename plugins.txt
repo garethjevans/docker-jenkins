@@ -46,6 +46,7 @@ release:2.5.4
 sbt:1.5
 scm-api:1.0
 script-security:1.17
+scoverage:1.3.0
 simple-theme-plugin:0.3
 slack:1.8.1
 sonar:2.2.1
