@@ -19,6 +19,7 @@ gerrit-trigger:2.18.3
 git:2.4.2
 git-client:1.19.5
 git-server:1.6
+gitlab-plugin:1.1.28
 greenballs:1.15
 groovy-postbuild:2.3.1
 htmlpublisher:1.11
