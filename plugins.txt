@@ -23,6 +23,7 @@ git-client:1.19.5
 git-server:1.6
 gitlab-plugin:1.1.28
 gradle:1.24
+gravatar:2.1
 greenballs:1.15
 groovy-postbuild:2.3.1
 handlebars:1.1
