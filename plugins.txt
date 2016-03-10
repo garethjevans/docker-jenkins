@@ -8,7 +8,7 @@ cloudbees-folder:5.3
 couchdb-statistics:0.3
 credentials:1.25
 credentials-binding:1.7
-cucumber-reports:1.4.0
+cucumber-reports:2.0.0
 cucumber-slack-notifier:0.7.1
 cucumber-testresult-plugin:0.8.2
 dashboard-view:2.9.7
