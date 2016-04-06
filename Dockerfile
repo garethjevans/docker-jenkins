@@ -27,8 +27,8 @@ RUN curl -fL https://github.com/krallin/tini/releases/download/v0.5.0/tini-stati
 
 # COPY init.groovy /usr/share/jenkins/ref/init.groovy.d/tcp-slave-agent-port.groovy
 
-ENV JENKINS_VERSION 1.642.2
-ENV JENKINS_SHA e72e06e64d23eefb13090459f517b0697aad7be0
+ENV JENKINS_VERSION 1.642.4
+ENV JENKINS_SHA 3cb37dde64b1aca9952c7a4f98f3c0b71d02cd8b
 
 # could use ADD but this one does not check Last-Modified header 
 # see https://github.com/docker/docker/issues/8331
@@ -60,7 +60,7 @@ RUN wget --quiet http://repo1.maven.org/maven2/org/codehaus/sonar/runner/sonar-r
 	mv sonar-runner-${SONAR_VERSION} /opt/sonar-runner && \
 	chown -R jenkins:jenkins /opt/sonar-runner
 
-ENV NEWRELIC_AGENT_VERSION 3.26.1
+ENV NEWRELIC_AGENT_VERSION 3.27.0
 RUN wget --quiet https://download.run.pivotal.io/new-relic/new-relic-${NEWRELIC_AGENT_VERSION}.jar && \
 	mkdir /opt/newrelic && \
 	mv new-relic-${NEWRELIC_AGENT_VERSION}.jar /opt/newrelic/new-relic.jar && \
