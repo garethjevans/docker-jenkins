@@ -6,7 +6,7 @@ build-timeout:1.16
 build-metrics:1.1
 cloudbees-folder:5.7
 couchdb-statistics:0.3
-credentials:1.26
+credentials:1.27
 credentials-binding:1.7
 cucumber-reports:2.1.0
 cucumber-slack-notifier:0.7.1
