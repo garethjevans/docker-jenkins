@@ -65,6 +65,7 @@ sonar:2.2.1
 ssh-agent:1.10
 ssh-credentials:1.11
 ssh-slaves:1.10
+structs:1.1
 swarm:2.0
 throttle-concurrents:1.8.5
 timestamper:1.7.4
