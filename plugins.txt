@@ -53,7 +53,7 @@ parameterized-trigger:2.30
 pipeline-build-step:2.0
 pipeline-input-step:2.0
 pipeline-rest-api:1.4
-pipeline-stage-step:2.0
+pipeline-stage-step:2.1
 pipeline-stage-view:1.4
 plain-credentials:1.1
 port-allocator:1.8
@@ -77,14 +77,14 @@ throttle-concurrents:1.9.0
 timestamper:1.8.2
 token-macro:1.12.1
 view-job-filters:1.27
-workflow-aggregator:2.0
+workflow-aggregator:2.1
 workflow-api:2.0
 workflow-basic-steps:2.0
 workflow-cps:2.2
 workflow-cps-global-lib:2.0
 workflow-durable-task-step:2.0
 workflow-job:2.1
-workflow-multibranch:2.0
+workflow-multibranch:2.3
 workflow-scm-step:2.0
 workflow-step-api:2.0
 workflow-support:2.0
