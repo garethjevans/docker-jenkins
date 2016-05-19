@@ -27,7 +27,7 @@ find /usr/share/jenkins/ref/ -type f -exec bash -c "copy_reference_file '{}'" \;
 
 # if `docker run` first argument start with `--` the user is passing jenkins launcher arguments
 if [[ $# -lt 1 ]] || [[ "$1" == "--"* ]]; then
-   exec java -Dhudson.model.DirectoryBrowserSupport.CSP="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';" $JAVA_OPTS -jar /usr/share/jenkins/jenkins.war $JENKINS_OPTS "$@"
+   exec java -Dhudson.model.ParametersAction.safeParameters=GERRIT_REFSPEC -Dhudson.model.DirectoryBrowserSupport.CSP="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';" $JAVA_OPTS -jar /usr/share/jenkins/jenkins.war $JENKINS_OPTS "$@"
 fi
 
 # As argument is not jenkins, assume user want to run his own process, for sample a `bash` shell to explore this image
