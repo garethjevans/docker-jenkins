@@ -88,3 +88,4 @@ workflow-scm-step:2.0
 workflow-step-api:2.0
 workflow-support:2.0
 ws-cleanup:0.29
+xunit:1.102
