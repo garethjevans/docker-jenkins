@@ -19,7 +19,7 @@ docker-plugin:0.16.0
 durable-task:1.9
 envinject:1.92.1
 extended-read-permission:1.0
-gatling:1.1.2
+gatling:1.2.0
 gerrit-trigger:2.20.0
 git:2.4.4
 git-client:1.19.6
