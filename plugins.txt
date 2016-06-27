@@ -47,7 +47,7 @@ maven-plugin:2.13
 momentjs:1.1.1
 nodelabelparameter:1.7.2
 pam-auth:1.2
-parameterized-trigger:2.30
+parameterized-trigger:2.31
 pipeline-build-step:2.1
 pipeline-input-step:2.0
 pipeline-rest-api:1.4
