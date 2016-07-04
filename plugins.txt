@@ -11,7 +11,7 @@ couchdb-statistics:0.3
 credentials:2.1.4
 credentials-binding:1.8
 cucumber-reports:2.5.1
-cucumber-slack-notifier:0.7.1
+cucumber-slack-notifier:0.8
 cucumber-testresult-plugin:0.8.2
 dashboard-view:2.9.10
 dependency-check-jenkins-plugin:1.4.0
