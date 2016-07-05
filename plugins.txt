@@ -22,7 +22,7 @@ envinject:1.92.1
 extended-read-permission:1.0
 gatling:1.2.0
 gerrit-trigger:2.21.1
-git:2.5.1
+git:2.5.2
 git-client:1.19.6
 gitlab-plugin:1.2.5
 git-server:1.6
