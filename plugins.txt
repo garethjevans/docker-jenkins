@@ -16,6 +16,7 @@ cucumber-testresult-plugin:0.8.2
 dashboard-view:2.9.10
 dependency-check-jenkins-plugin:1.4.2
 description-setter:1.10
+display-url-api:0.2
 docker-plugin:0.16.1
 durable-task:1.12
 envinject:1.92.1
@@ -27,6 +28,9 @@ git:2.6.0
 git-client:1.21.0
 gitlab-plugin:1.4.0
 git-server:1.7
+github-api:1.77
+github-branch-source:1.9
+github-organization-folder:1.4
 gradle:1.25
 gravatar:2.1
 greenballs:1.15
