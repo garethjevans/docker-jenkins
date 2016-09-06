@@ -81,12 +81,12 @@ timestamper:1.8.5
 token-macro:1.12.1
 view-job-filters:1.27
 workflow-aggregator:2.2
-workflow-api:2.1
+workflow-api:2.2
 workflow-basic-steps:2.1
 workflow-cps:2.13
 workflow-cps-global-lib:2.2
 workflow-durable-task-step:2.4
-workflow-job:2.5
+workflow-job:2.6
 workflow-multibranch:2.8
 workflow-scm-step:2.2
 workflow-step-api:2.3
