@@ -28,8 +28,8 @@ RUN curl -fL https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/
 
 # COPY init.groovy /usr/share/jenkins/ref/init.groovy.d/tcp-slave-agent-port.groovy
 
-ENV JENKINS_VERSION 2.7.2
-ENV JENKINS_SHA 4c05175677825a0c311ef3001bbb0a767dad0e8d
+ENV JENKINS_VERSION 2.7.3
+ENV JENKINS_SHA f822e70810e0d30c6fbe7935273635740faa3d89
 
 # could use ADD but this one does not check Last-Modified header 
 # see https://github.com/docker/docker/issues/8331
