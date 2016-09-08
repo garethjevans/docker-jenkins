@@ -16,7 +16,7 @@ cucumber-testresult-plugin:0.8.2
 dashboard-view:2.9.10
 dependency-check-jenkins-plugin:1.4.3
 description-setter:1.10
-display-url-api:0.2
+display-url-api:0.3
 docker-plugin:0.16.1
 durable-task:1.12
 envinject:1.92.1
@@ -40,7 +40,7 @@ htmlpublisher:1.11
 icon-shim:2.0.3
 javadoc:1.4
 jobConfigHistory:2.15
-jquery:1.7.2-1
+jquery:1.11.2-0
 jquery-detached:1.2.1
 junit:1.18
 ldap:1.12
@@ -84,7 +84,7 @@ throttle-concurrents:1.9.0
 timestamper:1.8.5
 token-macro:1.12.1
 view-job-filters:1.27
-workflow-aggregator:2.2
+workflow-aggregator:2.3
 workflow-api:2.3
 workflow-basic-steps:2.1
 workflow-cps:2.15
