@@ -28,10 +28,10 @@ git:2.6.0
 git-client:1.21.0
 gitlab-plugin:1.4.0
 git-server:1.7
-github:1.14.0
+github:1.21.1
 github-api:1.77
 github-branch-source:1.9
-github-organization-folder:1.4
+github-organization-folder:1.5
 gradle:1.25
 gravatar:2.1
 greenballs:1.15
