@@ -28,6 +28,7 @@ git:2.6.0
 git-client:1.21.0
 gitlab-plugin:1.4.0
 git-server:1.7
+github:1.14.0
 github-api:1.77
 github-branch-source:1.9
 github-organization-folder:1.4
