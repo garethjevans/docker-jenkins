@@ -61,7 +61,7 @@ pipeline-input-step:2.3
 pipeline-rest-api:2.1
 pipeline-stage-step:2.2
 pipeline-stage-view:2.1
-pipeline-milestone-step:1.0
+pipeline-milestone-step:1.1
 plain-credentials:1.3
 port-allocator:1.8
 PrioritySorter:3.4.1
