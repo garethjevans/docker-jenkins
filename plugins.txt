@@ -40,6 +40,7 @@ htmlpublisher:1.11
 icon-shim:2.0.3
 javadoc:1.4
 jobConfigHistory:2.15
+job-restrictions:0.6
 jquery:1.11.2-0
 jquery-detached:1.2.1
 junit:1.19
