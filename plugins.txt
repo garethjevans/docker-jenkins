@@ -1,4 +1,5 @@
 ace-editor:1.1
+active-directory:2.0
 analysis-core:1.79
 ansicolor:0.4.2
 antisamy-markup-formatter:1.5
