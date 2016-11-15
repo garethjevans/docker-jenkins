@@ -15,7 +15,7 @@ cucumber-reports:2.8.0
 cucumber-slack-notifier:0.8.3
 cucumber-testresult-plugin:0.9.7
 dashboard-view:2.9.10
-dependency-check-jenkins-plugin:1.4.3
+dependency-check-jenkins-plugin:1.4.4
 description-setter:1.10
 display-url-api:0.5
 durable-task:1.12
