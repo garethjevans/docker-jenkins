@@ -69,6 +69,7 @@ port-allocator:1.8
 PrioritySorter:3.4.1
 rebuild:1.25
 release:2.6.1
+resource-disposer:0.3
 run-condition:1.0
 sbt:1.5
 scm-api:1.3
