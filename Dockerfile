@@ -48,13 +48,13 @@ EXPOSE 50000
 
 ENV COPY_REFERENCE_FILE_LOG $JENKINS_HOME/copy_reference_file.log
 
+COPY jenkins-support /usr/local/bin/jenkins-support
 COPY jenkins.sh /usr/local/bin/jenkins.sh
 COPY plugins.sh /usr/local/bin/plugins.sh
+COPY install-plugins.sh /usr/local/bin/install-plugins.sh
 
-RUN chown jenkins:jenkins /usr/local/bin/jenkins.sh && \
-	chown jenkins:jenkins /usr/local/bin/plugins.sh && \
-	chmod a+x /usr/local/bin/jenkins.sh && \
-	chmod a+x /usr/local/bin/plugins.sh
+RUN chown jenkins:jenkins /usr/local/bin/* && \
+	chmod a+x /usr/local/bin/*
 
 ENV SONAR_VERSION 2.4
 RUN wget --quiet http://repo1.maven.org/maven2/org/codehaus/sonar/runner/sonar-runner-dist/${SONAR_VERSION}/sonar-runner-dist-${SONAR_VERSION}.zip && \
@@ -74,6 +74,6 @@ USER jenkins
 
 # Install plugins
 COPY plugins.txt /usr/local/etc/plugins.txt
-RUN /usr/local/bin/plugins.sh /usr/local/etc/plugins.txt #redo
+RUN /usr/local/bin/plugins.sh /usr/local/etc/plugins.txt
 
 ENTRYPOINT ["/bin/tini", "--", "/usr/local/bin/jenkins.sh"]
