@@ -1,6 +1,6 @@
 ace-editor:1.1
 active-directory:2.0
-analysis-core:1.80
+analysis-core:1.81
 ansicolor:0.4.3
 antisamy-markup-formatter:1.5
 bouncycastle-api:1.648.3
