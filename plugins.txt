@@ -20,6 +20,7 @@ dashboard-view:2.9.10
 dependency-check-jenkins-plugin:1.4.5
 description-setter:1.10
 display-url-api:1.1.1
+docker-commons:1.5 
 docker-workflow:1.9
 durable-task:1.13
 envinject:1.93.1
