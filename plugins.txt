@@ -32,7 +32,7 @@ git-server:1.7
 github:1.26.1
 github-api:1.84
 github-branch-source:2.0.3
-github-organization-folder:1.5
+github-organization-folder:1.6
 gradle:1.26
 gravatar:2.1
 greenballs:1.15
