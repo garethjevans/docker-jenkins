@@ -3,6 +3,7 @@ active-directory:2.0
 analysis-core:1.82
 ansicolor:0.4.3
 antisamy-markup-formatter:1.5
+authentication-tokens:1.1
 bouncycastle-api:1.648.3
 branch-api:2.0.7
 build-timeout:1.18
