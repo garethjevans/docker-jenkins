@@ -70,12 +70,6 @@ RUN chown jenkins:jenkins /usr/local/bin/* && \
 
 RUN mkdir /opt
 
-ENV SONAR_VERSION 2.4
-RUN wget --quiet http://repo1.maven.org/maven2/org/codehaus/sonar/runner/sonar-runner-dist/${SONAR_VERSION}/sonar-runner-dist-${SONAR_VERSION}.zip && \
-	unzip sonar-runner-dist-${SONAR_VERSION}.zip && \
-	mv sonar-runner-${SONAR_VERSION} /opt/sonar-runner && \
-	chown -R jenkins:jenkins /opt/sonar-runner
-
 ENV NEWRELIC_AGENT_VERSION 3.36.0
 RUN wget --quiet https://download.run.pivotal.io/new-relic/new-relic-${NEWRELIC_AGENT_VERSION}.jar && \
 	mkdir /opt/newrelic && \
