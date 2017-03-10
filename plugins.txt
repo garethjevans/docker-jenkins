@@ -97,6 +97,7 @@ swarm:3.3
 throttle-concurrents:1.9.0
 timestamper:1.8.8
 token-macro:2.0
+validating-string-parameter:2.3
 view-job-filters:1.27
 workflow-aggregator:2.5
 workflow-api:2.11

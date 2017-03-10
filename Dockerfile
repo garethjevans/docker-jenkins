@@ -1,6 +1,6 @@
-FROM openjdk:8-jdk
+FROM openjdk:8-jdk-alpine
 
-RUN apt-get update && apt-get install -y wget git curl zip graphviz && rm -rf /var/lib/apt/lists/*
+RUN apk add --no-cache git openssh-client wget curl unzip bash ttf-dejavu coreutils
 
 ENV JENKINS_HOME /var/jenkins_home
 ENV JENKINS_SLAVE_AGENT_PORT 50000
@@ -13,8 +13,8 @@ ARG gid=1000
 # Jenkins is run with user `jenkins`, uid = 1000
 # If you bind mount a volume from the host or a data container, 
 # ensure you use the same uid
-RUN groupadd -g ${gid} ${group} \
-    && useradd -d "$JENKINS_HOME" -u ${uid} -g ${gid} -m -s /bin/bash ${user}
+RUN addgroup -g ${gid} ${group} \
+    && adduser -h "$JENKINS_HOME" -u ${uid} -G ${group} -s /bin/bash -D ${user}
 
 # Jenkins home directoy is a volume, so configuration and build history 
 # can be persisted and survive image upgrades
@@ -29,7 +29,7 @@ ENV TINI_VERSION 0.13.2
 ENV TINI_SHA afbf8de8a63ce8e4f18cb3f34dfdbbd354af68a1
 
 # Use tini as subreaper in Docker container to adopt zombie processes 
-RUN curl -fL https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini-static-amd64 -o /bin/tini && chmod +x /bin/tini \
+RUN curl -fsSL https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini-static-amd64 -o /bin/tini && chmod +x /bin/tini \
   && echo "$TINI_SHA /bin/tini" | sha1sum -c -
 
 # COPY init.groovy /usr/share/jenkins/ref/init.groovy.d/tcp-slave-agent-port.groovy
@@ -68,13 +68,9 @@ COPY install-plugins.sh /usr/local/bin/install-plugins.sh
 RUN chown jenkins:jenkins /usr/local/bin/* && \
 	chmod a+x /usr/local/bin/*
 
-ENV SONAR_VERSION 2.4
-RUN wget --quiet http://repo1.maven.org/maven2/org/codehaus/sonar/runner/sonar-runner-dist/${SONAR_VERSION}/sonar-runner-dist-${SONAR_VERSION}.zip && \
-	unzip sonar-runner-dist-${SONAR_VERSION}.zip && \
-	mv sonar-runner-${SONAR_VERSION} /opt/sonar-runner && \
-	chown -R jenkins:jenkins /opt/sonar-runner
+RUN mkdir /opt
 
-ENV NEWRELIC_AGENT_VERSION 3.28.0
+ENV NEWRELIC_AGENT_VERSION 3.36.0
 RUN wget --quiet https://download.run.pivotal.io/new-relic/new-relic-${NEWRELIC_AGENT_VERSION}.jar && \
 	mkdir /opt/newrelic && \
 	mv new-relic-${NEWRELIC_AGENT_VERSION}.jar /opt/newrelic/new-relic.jar && \
