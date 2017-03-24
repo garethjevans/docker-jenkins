@@ -99,6 +99,7 @@ timestamper:1.8.8
 token-macro:2.0
 validating-string-parameter:2.3
 view-job-filters:1.27
+whitesource:1.7.7
 workflow-aggregator:2.5
 workflow-api:2.12
 workflow-basic-steps:2.4
