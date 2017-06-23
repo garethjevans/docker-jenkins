@@ -92,7 +92,6 @@ slack:2.2
 sonar:2.6.1
 ssh-agent:1.15
 ssh-credentials:1.13
-ssh-slaves:1.20
 structs:1.8
 swarm:3.4
 throttle-concurrents:2.0.1
