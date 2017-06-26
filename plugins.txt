@@ -4,6 +4,7 @@ analysis-core:1.86
 ansicolor:0.5.0
 antisamy-markup-formatter:1.5
 authentication-tokens:1.3
+aws-java-sdk:1.11.119
 bouncycastle-api:2.16.1
 branch-api:2.0.10
 build-timeout:1.18
@@ -44,6 +45,7 @@ handlebars:1.1.1
 htmlpublisher:1.13
 icon-shim:2.0.3
 javadoc:1.4
+jackson2-api:2.7.3
 jobConfigHistory:2.16
 job-restrictions:0.6
 jquery:1.11.2-0
