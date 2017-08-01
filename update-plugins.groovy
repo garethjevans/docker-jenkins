@@ -30,7 +30,7 @@ assert !'4.1'.isLaterVersionThan('5')
 assert !'02.2.02.01'.isLaterVersionThan('02.2.02.03')
 assert !'1.625.3'.isLaterVersionThan('2.60.2')
 
-
+// TODO should get this from the docker file
 def jenkinsVersion = '2.60.2'
 def plugins = [:]
 new File('plugins.txt').readLines().each{ plugins.put( it.split(':')[0] , it.split(':')[1] ) }
@@ -48,10 +48,12 @@ meta.plugins.each { k,v ->
             if (newVersion != currentVersion) {
                 println "${k} ${currentVersion} -> ${newVersion}"
                 plugins[k] = newVersion
-                v.dependencies.findAll{ !it.optional }.each {
-                    if (!plugins.containsKey(it.name)) {
-                        println "Missing dependency - ${it.name}:${it.version}" 
-                    }
+            }
+            
+            v.dependencies.findAll{ !it.optional }.each {
+                if (!plugins.containsKey(it.name)) {
+                    println "Missing dependency - ${it.name}:${it.version}"
+                    plugins.put(it.name, it.version)
                 }
             }
         } else {

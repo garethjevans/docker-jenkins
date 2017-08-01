@@ -110,7 +110,7 @@ workflow-basic-steps:2.6
 workflow-cps:2.37
 workflow-cps-global-lib:2.8
 workflow-durable-task-step:2.13
-workflow-job:2.12
+workflow-job:2.12.1
 workflow-multibranch:2.16
 workflow-scm-step:2.6
 workflow-step-api:2.12
