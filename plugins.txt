@@ -117,3 +117,4 @@ workflow-step-api:2.12
 workflow-support:2.14
 ws-cleanup:0.34
 xunit:1.102
+envinject-api:1.2
