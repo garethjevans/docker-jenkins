@@ -38,6 +38,7 @@ github:1.28.1
 github-api:1.89
 github-branch-source:2.2.4
 github-organization-folder:1.6
+google-oauth-plugin:0.5
 gradle:1.28
 gravatar:2.1
 greenballs:1.15
@@ -121,3 +122,4 @@ workflow-support:2.16
 ws-cleanup:0.34
 xunit:1.102
 envinject-api:1.4
+oauth-credentials:0.3
