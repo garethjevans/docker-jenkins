@@ -1,4 +1,4 @@
-FROM openjdk:8u121-jdk-alpine
+FROM openjdk:8u151-jdk-alpine
 
 RUN apk add --no-cache git openssh-client wget curl unzip bash ttf-dejavu coreutils
 
