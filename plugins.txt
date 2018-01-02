@@ -44,6 +44,7 @@ gravatar:2.1
 greenballs:1.15
 groovy-postbuild:2.3.1
 handlebars:1.1.1
+http_request:1.8.22
 htmlpublisher:1.14
 icon-shim:2.0.3
 javadoc:1.4
